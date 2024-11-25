@@ -1,147 +1,247 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #6f4e37; /* Coffee Brown */
-}
-
-p {
-    margin: 0 0 1rem;
-}
-
-a {
-    text-decoration: none;
-    color: #6f4e37;
-}
-
-a:hover {
-    color: #a67b5b; /* Lighter Coffee Tone */
-}
-
-/* Navbar */
 .navbar {
-    background-color: #6f4e37;
+    background-color: #fff;
 }
-
-.navbar-brand, .nav-link {
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12;
+}
+.navbar .navbar-brand-hover {
+    color: #e67e22;
+}
+.navbar-nav .nav-link {
+    color: #ecf0f1;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+.carousel-inner img {
+    filter: brightness(70%);
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel-inner h1 {
+    font-size: 3rem;
+    font-weight: bold;
     color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.carousel-caption p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #f39c12;
+}
+.carousel-caption .btn-primary {
+    background-color: #f39c12;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.carousel-caption .btn-primary:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
 }
 
-.nav-link:hover {
-    color: #a67b5b;
-}
-
-/* Hero Sections */
-#home-hero, #about-hero, #products-hero, #contact-hero {
-    background: linear-gradient(to right, #6f4e37, #a67b5b);
-    color: #fff;
-    padding: 100px 0;
+#about {
+    padding: 60px 20px;
+    background-color:#ecf0f1;
+    color: #2c3e50;
     text-align: center;
 }
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-#home-hero p, #about-hero p, #products-hero p, #contact-hero p {
+#products {
+    padding: 60px 20px;
+}
+#products h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f39c12;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+.carg-img-top {
+    border-radius: 8px 8px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+.card-title {
+    font-size:1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+.btn-outline-primary {
+    color: #f39c12;
+    border-color: #f39c12;
+}
+.btn-outline-primary:hover {
+    background-color: #f39c12;
+    color: #fff;
+    border-color: #f39c12;  
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+.footer p {
+    font-size: 1rem;
+    margin: 0;
+    color: #f39c12;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    .carousel-caption p {
+        font-size: 2rem;
+    }
+    #about h2 {
+        font-size: 2rem;
+    }
+    #products h2 {
+        font-size: 2rem;
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+#about-hero {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm gradient */
+    color: #fff;
+    padding: 60px 0;
+}
+
+#about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#about-hero p {
     font-size: 1.2rem;
 }
 
-/* Section Headings */
-section h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #6f4e37;
+/* Our Story */
+#our-story h2 {
+    color: #ff7e5f;
+    margin-bottom: 20px;
 }
 
-/* Buttons */
-.btn {
-    background-color: #6f4e37;
+#our-story p {
+    margin-bottom: 15px;
+}
+
+/* Our Values */
+#our-values {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+#our-values h2 {
+    margin-bottom: 30px;
+}
+
+#our-values h3 {
+    color: #feb47b;
+    margin-bottom: 10px;
+}
+
+/* Our Team */
+#our-team h2 {
+    margin-bottom: 20px;
+}
+
+#our-team h5 {
+    color: #ff7e5f;
+    margin-top: 15px;
+}
+
+#our-team p {
+    color: #666;
+}
+
+/* Call to Action */
+#cta {
+    background: linear-gradient(to right, #36d1dc, #5b86e5); /* Cool gradient */
     color: #fff;
-    border: none;
+    padding: 40px 0;
 }
 
-.btn:hover {
-    background-color: #a67b5b;
+#cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-/* Cards */
-.card {
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card-img-top {
-    border-bottom: 5px solid #a67b5b;
-}
-
-.card-title {
-    color: #6f4e37;
-}
-
-.card-text {
-    color: #555;
+#cta p {
+    font-size: 1.1rem;
 }
 
 /* Footer */
 footer {
-    background-color: #6f4e37;
-    color: #fff;
-    padding: 15px 0;
+    background: #333;
+    color: #bbb;
+    padding: 20px 0;
+    text-align: center;
 }
 
-footer a {
-    color: #fff;
+footer p {
+    margin: 0;
 }
 
-footer a:hover {
-    color: #a67b5b;
-}
-
-/* Forms */
-form .form-control {
-    border: 1px solid #a67b5b;
-    border-radius: 5px;
-}
-
-form .form-control:focus {
-    border-color: #6f4e37;
-    box-shadow: none;
-}
-
-form .btn {
-    width: 100%;
-}
-
-/* Social Links */
-#social-links i {
-    transition: transform 0.3s ease;
-}
-
-#social-links i:hover {
-    transform: scale(1.2);
-    color: #a67b5b;
-}
-
-/* Map */
-#map iframe {
+/* Buttons */
+.btn-primary {
+    background: #ff7e5f;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    #home-hero, #about-hero, #products-hero, #contact-hero {
-        padding: 50px 0;
-    }
-
-    .navbar-brand {
-        font-size: 1.5rem;
-    }
+.btn-primary:hover {
+    background: #feb47b;
+    color: #fff;
 }
+
+
