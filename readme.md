@@ -69,6 +69,8 @@ HTML,CSS,JAVASCRIPT,BOOTSTRAP
 <!-- The following are just sample -->
 Description of the project in details.
 
+Final Project in CCS0027L. The purpose of this coffee shop project is to demonstrate the application of essential web design principles and technical skills learned throughout the course by creating a fully functional, multi-page, and responsive website. The project aims to provide a digital platform for the coffee shop that showcases its brand, products, and services while delivering a seamless user experience. The website is designed to highlight the coffee shop's offerings such as coffee and desserts through an intuitive and visually appealing layout, provide essential information including the shop's story, menu, locations, and contact details to ensure easy accessibility for customers, reflect the coffee shop's aesthetic and atmosphere through effective use of design elements to enhance its online presence, and ensure adaptability across various devices to make it user-friendly for both desktop and mobile visitors. Ultimately, this project serves as a culmination of the skills acquired in web design focusing on real-world application and user-centric design.
+
 Guiding Question:
 - What is the project
 - Whats the purpose
